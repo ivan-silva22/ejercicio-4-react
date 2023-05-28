@@ -1,5 +1,6 @@
 import './App.css'
 import FormularioTarea from './components/FormularioTarea'
+import ListaTareas from './components/ListaTareas'
 
 function App() {
   
@@ -8,6 +9,7 @@ function App() {
       <h1 className='display-3'>Lista de tareas</h1>
       <hr />
       <FormularioTarea></FormularioTarea>
+      <ListaTareas></ListaTareas>
     </section>  
   )
 }
