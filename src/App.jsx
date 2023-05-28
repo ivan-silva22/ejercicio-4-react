@@ -5,11 +5,16 @@ import ListaTareas from './components/ListaTareas'
 function App() {
   
   return (
-    <section className='text-white container text-center my-4'>
+    <section className='text-white text-center container'>
+      <article className='container'>
       <h1 className='display-3'>Lista de tareas</h1>
-      <hr />
+      <hr/>
+      </article>
       <FormularioTarea></FormularioTarea>
       <ListaTareas></ListaTareas>
+      <footer className='bg-black py-3'>
+        <p className='mb-0'>&copy; Todos los derechos reservados</p>
+      </footer>
     </section>  
   )
 }
