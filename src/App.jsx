@@ -1,6 +1,5 @@
 import './App.css'
 import FormularioTarea from './components/FormularioTarea'
-import ListaTareas from './components/ListaTareas'
 
 function App() {
   
@@ -11,7 +10,6 @@ function App() {
       <hr/>
       </article>
       <FormularioTarea></FormularioTarea>
-      <ListaTareas></ListaTareas>
       <footer className='bg-black py-3'>
         <p className='mb-0'>&copy; Todos los derechos reservados</p>
       </footer>
