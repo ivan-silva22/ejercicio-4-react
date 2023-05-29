@@ -1,4 +1,5 @@
 import {Button, ListGroup} from "react-bootstrap";
+import PropTypes from 'prop-types';
 
 function ItemTarea({ tarea }) {
   return (
@@ -22,5 +23,9 @@ function ItemTarea({ tarea }) {
     </div>
   );
 }
+
+ItemTarea.propTypes = {
+  tarea: PropTypes.string
+};
 
 export default ItemTarea;
