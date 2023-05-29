@@ -1,13 +1,22 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import ListaTareas from "./ListaTareas";
+import { useState } from "react";
 
 function FormularioTarea() {
+  const [tarea, setTarea] = useState('');
+  const [listadoTareas, setListadoTareas] = useState([]);
+
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    
+  }
+
   return (
     <section>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3 d-flex" controlId="tarea">
-          <Form.Control type="text" placeholder="Ingrese una tarea" required/>
+          <Form.Control type="text" placeholder="Ingrese una tarea" required onChange={(e) => setTarea(e.target.value)} value={tarea}/>
         <Button variant="primary" type="submit">
           <svg
             xmlns="http://www.w3.org/2000/svg"
