@@ -9,7 +9,8 @@ function FormularioTarea() {
 
   const handleSubmit = (e)=>{
     e.preventDefault();
-    
+    setListadoTareas([...listadoTareas,tarea]);
+    setTarea('');
   }
 
   return (
