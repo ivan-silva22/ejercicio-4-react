@@ -7,8 +7,7 @@ function FormularioTarea() {
     <section>
       <Form>
         <Form.Group className="mb-3 d-flex" controlId="tarea">
-          <Form.Control type="text" placeholder="Ingrese una tarea" />
-        
+          <Form.Control type="text" placeholder="Ingrese una tarea" required/>
         <Button variant="primary" type="submit">
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -1,12 +1,13 @@
+import { ListGroup } from "react-bootstrap";
 import ItemTarea from "./ItemTarea";
 
 function ListaTareas(){
     return(
-        <div className="bg-color col-sm-12 col-md-6 col-lg-5 my-3 m-auto ">
-            <ItemTarea></ItemTarea>
-            <ItemTarea></ItemTarea>
-            <ItemTarea></ItemTarea>
-        </div>
+        <ListGroup className="bg-color">
+            <ItemTarea tarea = 'planificar'></ItemTarea>
+            <ItemTarea tarea = 'maquetar'></ItemTarea>
+            <ItemTarea tarea = 'codear'></ItemTarea>
+        </ListGroup>
     )
 }
 
